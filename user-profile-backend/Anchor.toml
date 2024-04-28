@@ -3,6 +3,7 @@
 [features]
 resolution = true
 skip-lint = false
+seeds = true
 
 [programs.localnet]
 user_profile_backend = "EEoe57rfT1qw8SrCy1M1AmVQUJjXndFRY4q5KYWwGdj"
@@ -11,7 +12,7 @@ user_profile_backend = "EEoe57rfT1qw8SrCy1M1AmVQUJjXndFRY4q5KYWwGdj"
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "Testnet"
+cluster = "Devnet"
 wallet = "~/.config/solana/id.json"
 
 [scripts]

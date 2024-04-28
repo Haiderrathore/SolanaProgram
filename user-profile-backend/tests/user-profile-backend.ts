@@ -13,11 +13,12 @@ describe("user-profile-backend", () => {
   {
     const [userProfilePDA] = web3.PublicKey.findProgramAddressSync([Buffer.from("User"), provider.publicKey.toBuffer()], program.programId);
 
-    const name = "Haider";
-    const username = "Rathore";
-    const email = "haider@gmail.com";
+    const name = "Prasanta";
+    const username = "Memxor";
+    const email = "test@gmail.com";
 
     await program.methods.initUserprofile(name, username, email).rpc();
+
     const userInfoAccount = await program.account.userProfile.fetch(userProfilePDA);
 
     expect(userInfoAccount.name).to.equal(name);
